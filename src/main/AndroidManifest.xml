@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="net.fulcrum.cats.android.mocana"
+          android:versionCode="0"
+          android:versionName="Mocana Login Test">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:label="Mochana Login Test">
+
+        <activity
+            android:name=".activities.LoginTestActivity"
+            android:configChanges="orientation|keyboard|screenSize|locale"
+            android:label="Mocana Login Test"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop"
+            android:clearTaskOnLaunch="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+        </activity>
+    </application>
+</manifest>
